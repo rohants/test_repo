@@ -556,6 +556,12 @@ footer .footer-icons:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    /* scroll up button animation removed for mobile view */
+    .scroll-up-btn:hover{
+        background-color: teal;
+        color: white;
+        transform: none;
+    }
 }
 
 /* newly added version 2024 */
@@ -735,6 +741,7 @@ footer .footer-icons:hover{
 }
 .contact .contact-content .left{
     width: 50%;
+    text-align: center;
 }
 .contact .contact-content .left .section1{
     text-align: center;
@@ -742,18 +749,22 @@ footer .footer-icons:hover{
 }
 .contact .contact-content .left .section1{
     /* padding-top: 0px; */
-    padding-bottom: 24px;
+    padding-bottom: 0px;
 }
-.contact .contact-content .left .section1 .slogan{
+.contact .contact-content .left .section1 p{
+    text-align: center;
+}
+.contact .contact-content .left .section1 .slogan,
+.contact .contact-content .left .section1 .slogan2{
     margin-top: 0px;
     padding-right: 0px;
   }
   .contact .contact-content .left .section1 .slogan2{
-    margin-top: -5px;
+    margin-top: -7px;
     color: darkslategray;
-    padding: 0px 86.5px;
     font-weight: 550;
     font-size: small;
+    padding-right: 80px;
 
   }
   .contact .contact-content .left .section1 .big-line{
