@@ -364,6 +364,10 @@ section .title{
     object-fit: cover;
     margin-right: 160px;
     border-radius:60%;
+    transition: 0.3s ease-in-out;
+  }
+.about .about-content .left img:hover{
+    transform: scale(1.05);
   }
 
 .about .about-content .right{
@@ -435,6 +439,9 @@ footer .footer-icons:hover{
         width: 310px;
         margin-right: 0px;
     }
+    .about .about-content .left img:hover{
+        transform: none;
+      }
 /* solution!!!! for skills to make to two grid view for mobile*/
     .skills .max-width ul{
 		grid-template-columns: repeat(2, 1fr);
@@ -662,24 +669,20 @@ footer .footer-icons:hover{
 .skills {
     text-align: center;
 }
-
 .skills ul {
     padding-block-start: 5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 3.2rem 1rem;
 }
-
 .skills .title{
     margin-bottom: 1%;
 }
-
 .skills ul {
     list-style-type: none;
     padding-left: 00px;
     margin: 0;
 }
-
 .skills li {
     font-size: medium;
     font-weight: normal;
@@ -688,7 +691,6 @@ footer .footer-icons:hover{
     transition: all 0.3s ease;
     border-radius: 5px;
 }
-
 .skills li:hover {
     font-weight: bold;
     color: teal; /* Change this color to your preferred hover color */
@@ -1002,41 +1004,128 @@ footer .footer-icons:hover{
     
 }
 
-/* underline hover effect */
+/* Applying underline hover animation for all the section titles, skills, menu options*/
 /* navbar underline effect */
-/* .navbar .menu a:after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: inline-block;
+.navbar .menu a::after{
+    content: '';
+    position: absolute;
+    width: 100%; /* Adjust this percentage to change the underline length */
     height: 2px;
-    left: 50%;
-    background: teal;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0%;
+    bottom: -2px;
+    left: 0; /* Center the underline */
+    background-color: teal;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
 }
-.navbar .menu a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  } */ 
+.navbar .menu a:hover::after,
+.navbar.sticky .menu a:hover::after { 
+    visibility: visible;
+    transform: scaleX(1);
+  } 
+.navbar.sticky .menu a::after{
+    content: '';
+    position: absolute;
+    width: 100%; /* Adjust this percentage to change the underline length */
+    height: 2px;
+    bottom: -2px;
+    left: 0; /* Center the underline */
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+} 
+/* For all section titles */
+.h2 {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+h2{
+    transition: 0.3s ease-in-out;
+}
+h2:hover{
+    transform: scale(1.04);
+    color: teal;
+}
+h2::after {
+    content: '';
+    position: absolute;
+    width: 25%; /* Adjust this percentage to change the underline length */
+    height: 3px;
+    bottom: 10px;
+    left: 37.5%; /* Center the underline */
+    background-color: teal;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+h2:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* For skills only in desktop mode */
+.skills ul li::after{
+    content: '';
+    position: absolute;
+    width: 100%; /* Adjust this percentage to change the underline length */
+    height: 1.5px;
+    bottom: -5px;
+    left: 0; /* Center the underline */
+    background-color: teal;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+.skills ul li:hover::after{
+    visibility: visible;
+    transform: scaleX(0.5);
+}
+.pop-up-win h2:hover{
+    color: #fff;
+    transform: none;
 
-/* for all the section titles*/
-h2::after{
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: teal;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
+}
+.pop-up-win h2:hover::after{
+    visibility: hidden;
+}
+
+/* Responsives for underline animation in mobile view */
+@media (max-width: 790px){
+    h2{
+        transition: 0.3s ease-in-out;
     }
-h2:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+    h2:hover{
+        transform: scale(1.04);
+        color: teal;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        bottom: 10px;
+        left: 10%;
+        background-color: teal;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-out; /* Adjust the time (0.2s) to reduce or increase animation length */
+    }
+    h2:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+/* Remove underline hover animation for mobile view */
+@media (max-width: 600px){
+    .skills ul li:hover::after{
+        visibility: hidden;
+    }
+    .pop-up-win h2:hover::after{
+        visibility: hidden;
+    }
+}
 
 /* Apply the animation to the sections */
 /* animation margin fix to make animation look */
@@ -1053,6 +1142,28 @@ h2:hover:after {
 .more{
     margin-bottom: 100px;
 }
+
+@media (max-width: 900px){
+    .about{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .skills{
+        margin-bottom: 0px;
+    }
+    .projects{
+        margin-bottom: 0px;
+    }
+    .more{
+        margin-bottom: 0px;
+    }
+    .contact{
+        margin-bottom: -45px;
+    }
+
+}
+
+
 /* Define the fade-up animation keyframes */
 @keyframes fadeUp {
     from {
