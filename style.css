@@ -193,8 +193,6 @@ section{
     }
 } */
 
-
-
 /* All Menu Titles */
 section .title{
     position: relative;
@@ -400,7 +398,6 @@ section .title{
     background: transparent;
     transform: scale(1.03);
 }
-
 
 /* footer section styling */
 footer{
@@ -729,7 +726,6 @@ footer .footer-icons:hover{
     border-top-right-radius: 10px;
 }
 
-
 /* new new new contact styling - Tuesday */
 .contact h2{
     margin-bottom: 30px;
@@ -821,7 +817,6 @@ footer .footer-icons:hover{
 .contact .contact-content .right .section2 input,
 .contact .contact-content .right .section2 textarea{
     transition: all 0.3s ease;
-
 }
 .contact .contact-content .right .section2 input:hover,
 .contact .contact-content .right .section2 textarea:hover{
@@ -830,7 +825,6 @@ footer .footer-icons:hover{
     background-color: lightcyan;
     transform: scale(1.03);
 }
-
 .contact .contact-content .section2 input{
     color: black;
     background-color: transparent ;
@@ -910,7 +904,6 @@ footer .footer-icons:hover{
 
   } */
 
-
 /* newly added contact header ignore it's already present*/
 /* .contact h2{
     color: black;
@@ -919,6 +912,7 @@ footer .footer-icons:hover{
     font-size: 50px;
     font-weight: 500;
 } */
+
 /* auto response for contact section */
 @media (max-width: 1188px) {
     .contact h2{
@@ -1000,8 +994,7 @@ footer .footer-icons:hover{
         align-self: center; /* Center the button */
         width: auto; /* Make the button full width */
         max-width: 170px; /* Set a max width for the button */
-    }
-    
+    } 
 }
 
 /* Applying underline hover animation for all the section titles, skills, menu options*/
@@ -1084,7 +1077,6 @@ h2:hover::after {
 .pop-up-win h2:hover{
     color: #fff;
     transform: none;
-
 }
 .pop-up-win h2:hover::after{
     visibility: hidden;
@@ -1142,7 +1134,7 @@ h2:hover::after {
 .more{
     margin-bottom: 100px;
 }
-
+/* Adjusting the aligment of sections for mobile view */
 @media (max-width: 900px){
     .about{
         margin-top: 0px;
@@ -1160,9 +1152,7 @@ h2:hover::after {
     .contact{
         margin-bottom: -45px;
     }
-
 }
-
 
 /* Define the fade-up animation keyframes */
 @keyframes fadeUp {
