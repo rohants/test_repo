@@ -1,369 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Rohan Portfolio</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-     <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="script.js"></script>
 </head>
-	<body>
+<body>
+    <!-- scroll-up button -->
     <div class="scroll-up-btn">
-          <i class="fas fa-angle-up"></i>
-      </div>
-      <nav class="navbar">
-          <div class="max-width">
-              <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-              <ul class="menu">
-                  <li><a href="#home" class="menu-btn">Home</a></li>
-                  <li><a href="#about" class="menu-btn">About</a></li>
-                  <li><a href="#skills" class="menu-btn">Skills</a></li>
-                  <li><a href="#projects" class="menu-btn">Projects</a></li>
-                  <li><a href="#more" class="menu-btn">More</a></li>
-                  <li><a href="#contact" class="menu-btn">Contact</a></li>
-              </ul>
-              <div class="menu-btn">
-                  <i class="fas fa-bars"></i>
-              </div>
-          </div>
-      </nav> 
-    
-     <!-- home section start -->
-      <section class="home" id="home">
-          <div class="max-width">
-              <div class="home-content">
-                  <div class="text-1">Hey, </div>
-                  <div class="text-3"><span class="typing"></span></div>
-                  <a href="#about" class="know-more">Know more</a>
-              </div>
-          </div>
-      </section>
+        <i class="fas fa-angle-up"></i>
+    </div>
 
-     <!-- about section start -->
-     <section class="about fade-animation" id="about">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">Portfo<span>lio.</span></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#more" class="menu-btn">More</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hey, </div>
+                <div class="text-3">
+                    <span class="typing"></span>
+                </div>
+                <a href="#about" class="know-more">Know more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about fade-animation" id="about">
         <div class="max-width">
             <h2 class="title">ABOUT ME</h2>
             <div class="w3-center about-content">
                 <div class="column left">
                     <div class="rounded">
-                    <img src="img/photo.jpg" alt="">
-                  </div>
+                        <img src="img/photo.jpg" alt="">
+                    </div>
                 </div>
                 <br>
                 <div class="column right">
-                   <p> <div class="text">I'm Rohan T S</div></p>
-                    <p>An Senior Software Engineer in Data Insights at TEKsystems Global Services, Bengaluru</p><br />
-                    <div class="w3-center"><a href="resume.txt"  download>Download Resume</a></div>
+                    <p>
+                        <div class="text">I'm Rohan T S</div>
+                    </p>
+                    <p>An Senior Software Engineer in Data Insights at TEKsystems 
+                       Global Services, Bengaluru.
+                    </p>
+                    <br />
+                    <div class="w3-center">
+                        <a href="resume.txt"  download>Download Resume</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!--new skills section starts -->
-			<section class="skills fade-animation" id="skills">
-				<div class="max-width">
-						<h2 class="title">MY SKILLS</h2>
-						<h3 class="title" style="font-size:185%">Technologies I Work With</h3>
-						<p>
-							I've have taken a number of online courses, currently getting my
-							hands dirty with
-							<strong>Azure DataFactory & Azure Synapse</strong> and here are a few
-							technologies I’ve been working with recently:
-						</p>
+	<section class="skills fade-animation" id="skills">
+        <div class="max-width">
+            <h2 class="title">MY SKILLS</h2>
+            <h3 class="title" style="font-size:185%">Technologies I Work With</h3>
+            <p>
+                I've have taken a number of online courses, currently getting my
+                hands dirty with
+                <strong>Azure DataFactory & Azure Synapse</strong> and here are a few
+                technologies I’ve been working with recently:
+            </p>
 
-					<ul>
-						<li>Dialogflow CX & ES</li>
-                        <li>DFCX SCRAPI</li>
-						<li>Python Scripting</li>
-						<li>Google Cloud Platform (GCP)</li>
-						<li>Sequel DB</li>
-                        <li>HTML & CSS</li>
-						<li>Apache Spark</li>
-						<li>Hadoop & Hive</li>
-						<li>Linux</li>
-						<li>Git/GitHUB</li>
-						<li>Azure Cloud</li>
-                        <li>Azure Databricks</li>
-					</ul>
-				</div>
-			</section>
+            <ul>
+                <li>Dialogflow CX & ES</li>
+                <li>DFCX SCRAPI</li>
+				<li>Python Scripting</li>
+				<li>Google Cloud Platform (GCP)</li>
+				<li>Sequel DB</li>
+                <li>HTML & CSS</li>
+				<li>Apache Spark</li>
+				<li>Hadoop & Hive</li>
+				<li>Linux</li>
+				<li>Git/GitHUB</li>
+				<li>Azure Cloud</li>
+                <li>Azure Databricks</li>
+			</ul>
+		</div>
+	</section>
 
-<!--    projects section-->
-  <section class="projects fade-animation" id="projects">
-    <div class="max-width">  
-    <div class=" w3-center"> 
-      <div class="w3-container w3-content w3-padding-94" style="max-width:1200px">
-      <h2 class="title" style="text-align:center">PROJECTS </h2>
-          <div class="w3-row-padding w3-padding-34" style="margin:0 -16px">
-            <div class="w3-third w3-margin-bottom gal-box">
-              <img src="img/OpenGL.jpg" alt=" " style="width:100%"style="height:100%" class="w3-hover-opacity">
-              <div class="w3-container w3-light-gray"><br />
-                <p><b>Solar Power Plant Using Computer Graphics and OpenGL</b></p>
-                <br /><br />
-                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open').style.display='block'; hideNavbar();">Read More</button>
-              </div>
+    <!-- projects section -->
+    <section class="projects fade-animation" id="projects">
+        <div class="max-width">  
+            <div class=" w3-center"> 
+                <div class="w3-container w3-content w3-padding-94" style="max-width:1200px">
+                    <h2 class="title" style="text-align:center">PROJECTS </h2>
+                    <div class="w3-row-padding w3-padding-34" style="margin:0 -16px">
+                        <div class="w3-third  gal-box">
+                            <img src="img/OpenGL.jpg" alt=" " style="width:100%" style="height:100%" class="w3-hover-opacity">
+                            <div class="w3-container" style="height: fit-content; padding-top: 20px; padding-bottom: 12px; background-color: lightcyan;">
+                            <!-- <div class="w3-container" style="height: 170px; padding-top: 20px; background-color: lightcyan;"> -> Same div
+                                  section in case if you want to set the height manually rather than fit-to-content -->
+                                <!-- <br /> -->
+                                <p>
+                                    <b>Solar Power Plant Using Computer Graphics and OpenGL</b>
+                                </p>
+                                <!-- <br /><br /> -->
+                                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open').style.display='block'; hideNavbar();">Read More</button>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-margin-bottom gal-box">
+                            <img src="img/Covid.png" alt=" " style="width:100%" style="height:100%" class="w3-hover-opacity">
+                            <div class="w3-container" style="height: fit-content; padding-top: 20px; padding-bottom: 12px; background-color: lightcyan">
+                                <!-- <br /> -->
+                                <p>
+                                    <b>Covid Detection Using Convolutional Neural Network - (FLASK WEB APPLICATION)</b>
+                                </p>
+                                <!-- <br /> -->
+                                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open1').style.display='block'; hideNavbar();">Read More</button>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-margin-bottom gal-box">
+                            <img src="img/vb1.jpg" alt=" " style="width:100%" style="height:100%" class="w3-hover-opacity">
+                            <div class="w3-container" style="height: fit-content; padding-top: 20px; padding-bottom: 12px; background-color: lightcyan;">
+                                <!-- <br /> -->
+                                <p>
+                                    <b>Student Database Management System using Visual Basic (VB)</b>
+                                </p>
+                                <!-- <br /> -->
+                                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open2').style.display='block'; hideNavbar();">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="w3-third w3-margin-bottom gal-box">
-              <img src="img/Covid.png" alt=" " style="width:100%" style="height:100%"  class="w3-hover-opacity">
-              <div class="w3-container w3-light-gray"><br />
-                <p><b>Covid Detection Using Convolutional Neural Network - (FLASK WEB APPLICATION)</b></p>
-                <br />
-                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open1').style.display='block'; hideNavbar();">Read More</button>
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom gal-box">
-              <img src="img/vb1.jpg" alt=" " style="width:100%" style="height:100%" class="w3-hover-opacity">
-              <div class="w3-container w3-light-gray"><br />
-                <p><b>Student Database Management System using Visual Basic<br />(VB)<br /></b></p>
-                <br />
-                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open2').style.display='block'; hideNavbar();">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div> 
         </div>
-      </div>
-  </section>
+    </section>
 
-<!-- open pop-up action for projects -->
-  <div id="open" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win" id="modal-content">
-        <header class="w3-teal w3-center w3-padding-10">
-          <span onclick="document.getElementById('open').style.display='none'; showNavbar();" 
-        class="w3-button w3-large w3-display-topright">
-        <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 22px;"></i>
-        </span>
-          <h2  style="font-size: 28.5px">More</h2>
-        </header>
-      <div class="w3-container w3-center"><br />
-          <p style="text-align: left;"><b>Solar Power Plant Using Computer Graphics and OpenGL</b></p><br>
-          <!-- <img src="img/OpenGL.jpg" alt=" " style="width:60%" > -->
-          <!-- start new for multiple images in the pop-up window -->
-          <div class="carousel">
-            <span class="arrow arrow-left" onclick="prevImage()">&#10094;</span>
-            <img src="img/OpenGL.jpg" alt="Image 1" class="active">
-            <img src="img/Image2.jpg" alt="Image 2">
-            <img src="img/Image3.jpg" alt="Image 3">
-            <span class="arrow arrow-right" onclick="nextImage()">&#10095;</span>
-          </div>
-          <!-- end new -->
-          <p> <br /></p>
-          <div class="w3-container">
-            <div>
-              <p class="description active" style="text-align: left;">
-                  The Main aim of this Mini Project is to illustrate the concepts of working of a Satellite in OpenGL .
-                  A Satellite is an object which has been placed into orbit by human endeavor. Such objects are sometimes called artificial satellites
-                  to distinguish them from natural satellites such as the Moon. We have used input devices like mouse and key board to interact with
-                  program.We have also used SolidCube for forming a complete network setup which help to understand concept of Congestion Control 
-                  very well.
-              </p>
-              <p class="description"> image e description.</p>
-              <p class="description">Description for Image 3: This image depicts,  Satellite is an object which has been placed into orbit by human endeavor. Such objects are sometimes called artificial satellites
-                to distinguish them from natural satellites such as the Moon. We have used input devices like mouse and key board to interact with
-                program.We have also used SolidCube for form</p>
-          </div>
+    <!-- open pop-up action section for projects -->
+    <!-- Open First Open pop-up (projects) -->
+    <div id="open" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win" id="modal-content">
+            <header class="w3-teal w3-center w3-padding-10">
+                <span onclick="document.getElementById('open').style.display='none'; showNavbar();" class="w3-button w3-large w3-display-topright">
+                    <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 21px;"></i>
+                </span>
+                <h2  style="font-size: 28.5px">More</h2>
+            </header>
+            <div class="w3-container w3-center">
+                <p style="text-align: left; padding-top: 8px; padding-bottom: 18px;">
+                    <b>Solar Power Plant Using Computer Graphics and OpenGL</b>
+                </p>
+                <div class="carousel">
+                    <span class="arrow arrow-left" onclick="prevImage()">&#10094;</span>
+                    <img src="img/OpenGL.jpg" alt="Image 1" class="active" style="width:50%; height: fit-content;">
+                    <img src="img/Image2.jpg" alt="Image 2">
+                    <img src="img/Image3.jpg" alt="Image 3">
+                    <span class="arrow arrow-right" onclick="nextImage()">&#10095;</span>
+                </div>
+                <div class="w3-container" style="padding-top: 15px; padding-bottom: 20px; font-weight: 100; font-family: sans-serif; font-size: medium;">
+                    <div>
+                        <p class="description active" style="text-align: left;">
+                            The Main aim of this Mini Project is to illustrate the concepts of working of a Satellite in OpenGL .
+                            A Satellite is an object which has been placed into orbit by human endeavor. Such objects are sometimes called artificial satellites
+                            to distinguish them from natural satellites such as the Moon. We have used input devices like mouse and key board to interact with
+                            program.We have also used SolidCube for forming a complete network setup which help to understand concept of Congestion Control 
+                            very well.
+                        </p>
+                        <p class="description"> image e description.</p>
+                        <p class="description">Description for Image 3: This image depicts,  Satellite is an object which has been placed into orbit by human endeavor. Such objects are sometimes called artificial satellites 
+                            to distinguish them from natural satellites such as the Moon. We have used input devices like mouse and key board to interact with
+                            program.We have also used SolidCube for form
+                        </p>
+                    </div>
+                </div>
             </div>
-                  <br />
-          </div>
         </div> 
     </div>
-    </div>
 
+    <!-- open 2nd pop-up (projects) -->
     <div id="open1" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
-        <header class="w3-teal w3-center w3-padding-10"> 
-          <span onclick="document.getElementById('open1').style.display='none'; showNavbar();" 
-          class="w3-button w3-large w3-display-topright">
-          <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 22px;"></i>
-          </span>
-          <h2 style="font-size: 28.5px">More</h2>
-        </header>
-      <div class="w3-container w3-center"><br />
-          <p style="text-align: left;"><b>Covid Detection Using Convolutional Neural Network - (FLASK WEB APPLICATION)</b></p><br>
-          <img src="img/Covid.png" alt="" style="width:60%" >
-          <p> <br /></p>
-          <div class="w3-container">
-              <p style="text-align: left;">
-                  The Corona Virus (Covid-19) pandemic has taken the whole universe to downside and increasing rapidly day by day. 
-                  One such possible method for detecting Covid-19 is x-ray imaging.A Convolutional Neural Network(CNN) is one of the 
-                  technique for image recognition, image classification, object detection , face recognition etc, and also a most efficient
-                  and widely used algorithm in deep learning, CNN takes images, text, sound or videos as it’s input. The image is given as the
-                    input of the convolutional neural layer it process the given input image and classifies as per the categories.
-              </p>
-                  <br />
-          </div>
-        </div> 
-    </div>
-    </div>
-
-    <div id="open2" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
-        <header class="w3-teal w3-center w3-padding-10"> 
-          <span onclick="document.getElementById('open2').style.display='none'; showNavbar();" 
-          class="w3-button w3-large w3-display-topright">
-          <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 22px;"></i>
-          </span>
-          <h2 style="font-size: 28.5px">More</h2>
-        </header>
-      <div class="w3-container w3-center"><br />
-          <p style="text-align: left;"><b>Student Database Management System using Visual Basic (VB)</b></p>
-          <img src="img/vb1.jpg" alt="" style="width:70%" >
-          <div class="w3-container">
-              <p style="text-align: left;">
-                Visual Basic (VB) is an object-oriented programming language developed by Microsoft. In this particular
-                project i have developed a database that contain student's information like personal information, academics
-                information, daily based attendence info etc.
-              </p>
-                  <br />
-          </div>
-        </div> 
-    </div>
-    </div>
-
-  <!-- pop up/more section start -->
-  <section class="more fade-animation" id="more">
-    <div class="max-width">  
-    <div class="w3-container  w3-center"> 
-      <div class="w3-container w3-content w3-padding-94" style="max-width:1200px">
-      <h2 class="title" style="text-align:center"> More </h2>
-          <div class="w3-row-padding w3-padding-34" style="margin:0 -32px">
-            <div class="w3-third w3-margin-bottom gal-box">
-              <img src="img/covid1.jpg" alt="" style="width:100%" style="height:100%" class="w3-hover-opacity">
-              <div class="w3-container w3-light-gray"><br />
-                <p><b>Made a Survey on Predictive Modelling for Covid-19 and Pneumonia Detection.</b></p>
-                <br /><br />
-                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open3').style.display='block';  hideNavbar();">See Publication</button>
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom gal-box">
-              <img src="img/ssit.jpg" alt="" style="width:100%" style="height:100%" class="w3-hover-opacity">
-              <div class="w3-container w3-light-grey"><br />
-                <p><b style="height: fit-content;">A Work Shop on Artifical Intelligence , Which was conducted by SSIT-ISTE Student Chapter.</b></p><br />
-                 <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open5').style.display='block';  hideNavbar();">View Certificate</button>
-                <br />
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom gal-box">
-              <img src="img/Udemy.jpg" alt=" " style="width:100%" style="height:100%" class="w3-hover-opacity">
-              <div class="w3-container w3-light-grey"><br />
-                <p><b>Completed a Online Course on the topic Machine Learning A-Z; 
-                  Hands-on Python & R in Data Science.<br /></b></p>
-                <br /><button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open4').style.display='block'; hideNavbar();">View Certificate</button>
-              </div>
-            </div>
-          </div>
-        </div> 
+        <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
+            <header class="w3-teal w3-center w3-padding-10"> 
+                <span onclick="document.getElementById('open1').style.display='none'; showNavbar();" class="w3-button w3-large w3-display-topright">
+                    <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 21px;"></i>
+                </span>
+                <h2 style="font-size: 28.5px">More</h2>
+            </header>
+            <div class="w3-container w3-center">
+                <p style="text-align: left; padding-top: 8px; padding-bottom: 18px;"><b>Covid Detection Using Convolutional Neural Network - (FLASK WEB APPLICATION)</b></p>
+                <img src="img/Covid.png" alt="" style="width:50%; height: fit-content;">
+                <div class="w3-container" style="padding-top: 15px; padding-bottom: 20px; font-weight: 100; font-family: sans-serif; font-size: medium;">
+                    <p style="text-align: left;">
+                        The Corona Virus (Covid-19) pandemic has taken the whole universe to downside and increasing rapidly day by day. 
+                        One such possible method for detecting Covid-19 is x-ray imaging.A Convolutional Neural Network(CNN) is one of the 
+                        technique for image recognition, image classification, object detection , face recognition etc, and also a most efficient
+                        and widely used algorithm in deep learning, CNN takes images, text, sound or videos as it’s input. The image is given as the
+                        input of the convolutional neural layer it process the given input image and classifies as per the categories.
+                    </p>
+                </div>
+            </div> 
         </div>
-      </div>
-  </section>
-
-  <!-- more open section start -->
-  <div id="open3" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
-      <header class="w3-teal w3-center w3-padding-10">
-        <span onclick="document.getElementById('open3').style.display='none'; showNavbar();" 
-        class="w3-button w3-large w3-display-topright">
-        <i class="fa fa-arrow-circle-left" style="font-size: 23px;color: white;"></i>
-      </span> 
-        <h2 style="font-size: 28.5px">More</h2>
-      </header>
-    <div class="w3-container w3-center"><br />
-        <p style="text-align: left;"><b>Survey on Predictive Modelling for Covid-19 and Pneumonia Detection</b></p><br>
-        <img src="img/covid1.jpg" alt=" " style="width:60%" >
-        <p> <br /></p>
-        <div class="w3-container">
-            <p style="text-align: left;">
-              Authorized and published a Technical Paper on the topic “Survey on Predictive Modelling for 
-              Covid-19 and Pneumonia Detection” in International Journal of Computer Science and Communication.
-              Paper Link -<a href=" http://www.csjournals.com/?p=3377" style="color:lightskyblue">http://www.csjournals.com/?p=3377</a> 
-              [SN No-20]
-            </p>
-                <br />
-        </div>
-      </div> 
-  </div>
-  </div>
-
-  <div id="open4" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
-      <header class="w3-teal w3-center w3-padding-10">
-        <span onclick="document.getElementById('open4').style.display='none'; showNavbar();" 
-        class="w3-button w3-large w3-display-topright">
-        <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 22px;"></i>
-      </span> 
-        <h2 style="font-size: 28.5px">More</h2>
-      </header>
-    <div class="w3-container w3-center"><br />
-        <p style="text-align: left;"><b>Course Completion Certificate</b></p><br>
-        <img src="img/Udemy.jpg" alt=" " style="width:60%" >
-        <p> <br /></p>
-        <div class="w3-container">
-            <p style="text-align: left;">
-                Certified from <a href="https://www.udemy.com/" style="color: lightskyblue;">Udemy.com</a>
-            </p>
-                <br />
-        </div>
-      </div> 
-  </div>
-  </div>
-  <div id="open5" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
-      <header class="w3-teal w3-center w3-padding-10">
-        <span onclick="document.getElementById('open5').style.display='none'; showNavbar();" 
-        class="w3-button w3-large w3-display-topright">
-        <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 22px;"></i>
-      </span> 
-        <h2 style="font-size: 28.5px">More</h2>
-      </header>
-    <div class="w3-container w3-center"><br />
-        <p style="text-align: left;"><b>Work Shop Completion Certificate</b></p><br>
-        <img src="img/ssit.jpg" alt=" " style="width:60%" >
-        <p> <br /></p>
-        <div class="w3-container">
-            <p style="text-align: left;">
-                This workshop ended with the complition of 3 mini projects.
-            </p>
-                <br />
-        </div>
-      </div> 
-  </div>
-  </div>
+    </div>
   
-  <!-- new contact section -->
-  <section class="contact fade-animation" id="contact">
-    <div class="max-width">
-        <h2 class="title">CONTACT</h2>
-        <div class="contact-content">
-              <div class="column left">
-                  <div class="section1">
-                      <p class="slogan"><i>got interesting? or just looking to hire? Drop a note!</i></p>
-                      <h1 class="big-line">Let's Work Together</h1>
-                      <p class="slogan2">Feel free to reach out if you're looking to hire.</p>
-                  </div>
-              </div>
-              <div class="column right">
-                  <form action="https://formspree.io/f/xayrrzro" method="post">
-                      <div class="section2">
-                          <input type="text" class="all first" name="first" placeholder="First Name" autocomplete="off" required>
-                          <input type="text" class="all last" name="last" placeholder="Last Name" autocomplete="off" required>
-                          <br>
-                          <input type="email" class="all email" name="email" placeholder="Email Address" autocomplete="off" required>
-                          <textarea rows="5" cols="60" name="message" class="all text-area" placeholder="Enter text" autocomplete="off" required></textarea>
-                          <br>
-                          <button type="submit" class="w3-btn submit">Send Message</button>
-                      </div>
-                  </form>
-              </div>
+    <!-- open 3rd pop-up (projects) -->
+    <div id="open2" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
+            <header class="w3-teal w3-center w3-padding-10"> 
+                <span onclick="document.getElementById('open2').style.display='none'; showNavbar();" class="w3-button w3-large w3-display-topright">
+                    <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 21px;"></i>
+                </span>
+                <h2 style="font-size: 28.5px">More</h2>
+            </header>
+            <div class="w3-container w3-center">
+                <p style="text-align: left; padding-top: 8px; padding-bottom: 18px;"><b>Student Database Management System using Visual Basic (VB)</b></p>
+                <img src="img/vb1.jpg" alt="" style="width:50%; height: fit-content;" >
+                <div class="w3-container" style="padding-top: 15px; padding-bottom: 20px; font-weight: 100; font-family: sans-serif; font-size: medium;">
+                    <p style="text-align: left;">
+                        Visual Basic (VB) is an object-oriented programming language developed by Microsoft. In this particular
+                        project i have developed a database that contain student's information like personal information, academics
+                        information, daily based attendence info etc.
+                    </p>
+                </div>
+            </div> 
         </div>
     </div>
-  </section>
+
+    <!-- More Section -->
+    <section class="more fade-animation" id="more">
+        <div class="max-width">  
+            <div class="w3-center"> 
+                <div class="w3-container w3-content w3-padding-94" style="max-width:1200px">
+                    <h2 class="title" style="text-align:center"> More </h2>
+                    <div class="w3-row-padding w3-padding-34" style="margin:0 -16px">
+                        <div class="w3-third gal-box">
+                            <img src="img/covid1.jpg" alt="" style="width:100%" style="height:100%" class="w3-hover-opacity">
+                            <div class="w3-container" style="height: fit-content; padding-top: 20px; padding-bottom: 12px; background-color: lightcyan;">
+                                <p>
+                                    <b>Made a Survey on Predictive Modelling for Covid-19 and Pneumonia Detection.</b>
+                                </p>
+                                <!-- <br /><br /> -->
+                                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open3').style.display='block';  hideNavbar();">See Publication</button>
+                            </div>
+                        </div>
+                        <div class="w3-third gal-box">
+                            <img src="img/ssit.jpg" alt="" style="width:100%" style="height:100%" class="w3-hover-opacity">
+                            <div class="w3-container" style="height: fit-content; padding-top: 20px; padding-bottom: 12px; background-color: lightcyan;">
+                                <p>
+                                    <b style="height: fit-content;">A Work Shop on Artifical Intelligence , Which was conducted by SSIT-ISTE Student Chapter.</b>
+                                </p>
+                                <!-- <br /> --> 
+                                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open4').style.display='block';  hideNavbar();">View Certificate</button>
+                                <!-- <br /> -->
+                                </div>
+                            </div>
+                        <div class="w3-third gal-box">
+                            <img src="img/Udemy.jpg" alt=" " style="width:100%" style="height:100%" class="w3-hover-opacity">
+                            <div class="w3-container" style="height: fit-content; padding-top: 20px; padding-bottom: 12px; background-color: lightcyan;">
+                                <p>
+                                    <b>Completed a Online Course on the topic Machine Learning A-Z; Hands-on Python & R in Data Science.</b>
+                                </p>
+                                <!-- <br /> -->
+                                <button class="w3-btn w3-teal w3-margin-bottom more-btn" onclick="document.getElementById('open5').style.display='block'; hideNavbar();">View Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pop-up section for more -->
+    <!-- Open 1st pop-up (More) -->
+    <div id="open3" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
+            <header class="w3-teal w3-center w3-padding-10">
+                <span onclick="document.getElementById('open3').style.display='none'; showNavbar();" class="w3-button w3-large w3-display-topright">
+                    <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 21px;"></i>
+                </span> 
+                <h2 style="font-size: 28.5px">More</h2>
+            </header>
+            <div class="w3-container w3-center"><br />
+                <p style="text-align: left; padding-top: 8px; padding-bottom: 18px;"><b>Survey on Predictive Modelling for Covid-19 and Pneumonia Detection</b></p>
+                <img src="img/covid1.jpg" alt=" " style="width:50%; height: fit-content;" >
+                <div class="w3-container" style="padding-top: 15px; padding-bottom: 20px; font-weight: 100; font-family: sans-serif; font-size: medium;">
+                    <p style="text-align: left;">
+                        Authorized and published a Technical Paper on the topic “Survey on Predictive Modelling for 
+                        Covid-19 and Pneumonia Detection” in International Journal of Computer Science and Communication.
+                        Paper Link -<a href=" http://www.csjournals.com/?p=3377" style="color:rgb(15, 83, 172)">http://www.csjournals.com/?p=3377</a> 
+                        [SN No-20]
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Open 2nd pop-up (More) -->
+    <div id="open4" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
+            <header class="w3-teal w3-center w3-padding-10">
+                <span onclick="document.getElementById('open4').style.display='none'; showNavbar();" class="w3-button w3-large w3-display-topright">
+                    <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 21px;"></i>
+                </span> 
+                <h2 style="font-size: 28.5px">More</h2>
+            </header>
+            <div class="w3-container w3-center">
+                <p style="text-align: left; padding-top: 8px; padding-bottom: 18px;"><b>Work Shop Completion Certificate</b></p>
+                <img src="img/ssit.jpg" alt=" " style="width:60%" >
+                <div class="w3-container" style="padding-top: 15px; padding-bottom: 20px; font-weight: 100; font-family: sans-serif; font-size: medium;">
+                    <p style="text-align: left;">
+                        This workshop ended with the complition of 3 mini projects.
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Open 3rd pop-up (More) -->
+    <div id="open5" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 pop-up-win">
+            <header class="w3-teal w3-center w3-padding-10">
+                <span onclick="document.getElementById('open5').style.display='none'; showNavbar();" class="w3-button w3-large w3-display-topright">
+                    <i class="fa fa-arrow-circle-left close-arrow" style="font-size: 21px;"></i>
+                </span> 
+                <h2 style="font-size: 28.5px">More</h2>
+            </header>
+            <div class="w3-container w3-center">
+                <p style="text-align: left; padding-top: 8px; padding-bottom: 18px;"><b>Course Completion Certificate</b></p>
+                <img src="img/Udemy.jpg" alt=" " style="width:60%" >
+                <div class="w3-container" style="padding-top: 15px; padding-bottom: 20px; font-weight: 100; font-family: sans-serif; font-size: medium;">
+                    <p style="text-align: left;">
+                        Certified from <a href="https://www.udemy.com/" style="color: lightskyblue;">Udemy.com</a>
+                    </p>
+                </div>
+          </div> 
+      </div>
+    </div>
+
+    <!-- new contact section -->
+    <section class="contact fade-animation" id="contact">
+        <div class="max-width">
+            <h2 class="title">CONTACT</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="section1">
+                        <p class="slogan"><i>got interesting? or just looking to hire? Drop a note!</i></p>
+                        <h1 class="big-line">Let's Work Together</h1>
+                        <p class="slogan2">Feel free to reach out if you're looking to hire.</p>
+                    </div>
+                </div>
+                <div class="column right">
+                    <form action="https://formspree.io/f/xayrrzro" method="post">
+                        <div class="section2">
+                            <input type="text" class="all first" name="first" placeholder="First Name" autocomplete="off" required>
+                            <input type="text" class="all last" name="last" placeholder="Last Name" autocomplete="off" required>
+                            <br>
+                            <input type="email" class="all email" name="email" placeholder="Email Address" autocomplete="off" required>
+                            <textarea rows="5" cols="60" name="message" class="all text-area" placeholder="Enter text" autocomplete="off" required></textarea>
+                            <br>
+                            <button type="submit" class="w3-btn submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
   <!-- end of new contact section -->
 
   <!-- contact section start -->
@@ -405,19 +427,24 @@
     </div>
   </div> -->
 
-  <!-- footer section start -->
-  <footer  style="text-align: center;">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <p style="text-align: center"> Also in <i class="fa fa-arrow-circle-down fa-fw" style="font-size: 18.5px;color:white"></i> </p><br />
-        <p style="text-align: center;">
-        <a href="https://github.com/rohants"><i class="fa fa-github footer-icons" style=" margin-right: 14px;"></i></a>
-          <a href="https://www.linkedin.com/in/rohan-t-s-35b1b41a8/"><i class="fa fa-linkedin footer-icons"></i></a></p>
-          <br>
-      <span>Copyright <span class="far fa-copyright"></span> 2024 All rights reserved</span> | Rohan
-  </footer>
 
-<!-- Scripting part -->
+    <!-- footer section start -->
+    <footer  style="text-align: center;">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <p style="text-align: center"> Also in 
+            <i class="fa fa-arrow-circle-down fa-fw" style="font-size: 18.5px;color:white"></i> 
+        </p>
+        <br />
+        <p style="text-align: center;">
+            <a href="https://github.com/rohants"><i class="fa fa-github footer-icons" style=" margin-right: 14px;"></i></a>
+            <a href="https://www.linkedin.com/in/rohan-t-s-35b1b41a8/"><i class="fa fa-linkedin footer-icons"></i></a>
+        </p>
+        <br>
+        <span>Copyright <span class="far fa-copyright"></span> 2024 All rights reserved</span> | Rohan
+    </footer>
+
+  <!-- Scripting part -->
   <script>
     let currentImageIndex = 0;
     const images = document.querySelectorAll('.carousel img');
@@ -451,6 +478,6 @@
       document.querySelector('.navbar').style.display = 'block';
     }
   </script>
-
+             
 </body>
 </html>

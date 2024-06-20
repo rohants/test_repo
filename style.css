@@ -628,37 +628,39 @@ footer .footer-icons:hover{
 
 /* read more button under projects and more section */
 .more-btn {
-    /* background: teal; */
     color: #fff;
     border: none;
-    padding: 30px 20px;
+    /* padding: 40px 20px; */
     cursor: pointer;
     border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: auto;
     transition: transform 0.3s ease-in-out;
 }
 .max-width .w3-center .w3-padding-34 .gal-box .w3-container .more-btn:hover {
     /* border: 2px solid teal; */
     transform: scale(1.1);
 }
+
 /* close arrow button in pop up */
+.pop-up-win .w3-padding-10 .w3-display-topright{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 .close-arrow {
-    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
 .close-arrow:hover{
-    transform: scale(1.18); /* Enlarge the arrow on hover */
-    font-size: 24px; /* Optional: Adjust font size for additional effect */
-    /* font-size: 20px; */
+    transform: none;
     color: teal;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .close-arrow {
-      font-size: 20px;
-    }
-  }
-  @media (max-width: 480px) {
-    .close-arrow {
-      font-size: 18px;
+    /* fix for close button height in pop-up in mobile view */
+    .pop-up-win .w3-padding-10 .w3-display-topright{
+        font-size: 15px;
+        height: 42.75px;
     }
   }
 
@@ -719,8 +721,7 @@ footer .footer-icons:hover{
 .w3-modal .pop-up-win{
     border-radius: 12px;
 }
-.w3-modal .pop-up-win .w3-teal,
-.w3-modal .pop-up-win .w3-large{
+.w3-modal .pop-up-win .w3-teal{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -962,7 +963,7 @@ footer .footer-icons:hover{
     .contact .contact-content .right{
         flex: 100%;
     }
-.contact .contact-content .right .section2 .first{
+    .contact .contact-content .right .section2 .first{
         /* margin-top: 0px; */
         margin-bottom: 18px;
     }
@@ -1122,11 +1123,11 @@ h2:hover::after {
 /* Apply the animation to the sections */
 /* animation margin fix to make animation look */
 .about{
-    margin-top: 110px;
+    margin-top: 0px;
     margin-bottom: 150px;
 }
 .skills{
-    margin-bottom: 200px;
+    margin-bottom: 190px;
 }
 .projects{
     margin-bottom: 150px;
