@@ -663,6 +663,13 @@ footer .footer-icons:hover{
         height: 42.75px;
     }
   }
+@media (max-width: 4000px){
+    /* fix for close button height in pop-up in mobile view */
+    .pop-up-win .w3-padding-10 .w3-display-topright{
+        /* font-size: 15px; */
+        height: 42.75px;
+    }
+}
 
 /* new versiom skills skills section */
 .skills {
