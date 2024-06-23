@@ -201,7 +201,8 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 15px;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* navbar styling */
@@ -664,7 +665,7 @@ footer .footer-icons:hover{
     }
   }
 @media (max-width: 4000px){
-    /* fix for close button height in pop-up in mobile view */
+    /* fix for close button height in pop-up in extreme width view */
     .pop-up-win .w3-padding-10 .w3-display-topright{
         /* font-size: 15px; */
         height: 42.75px;
@@ -1183,4 +1184,37 @@ h2:hover::after {
 /* Class to trigger the fade-up animation */
 .fade-up {
     animation: fadeUp 1.35s ease-out forwards; /* Apply the fade-up animation */
+}
+
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.zoom-in {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-in:hover {
+    transform: scale(1.1); /* Adjust the scale value to control the zoom level */
+}
+
+/* zoom -out */
+/* .image-container {
+
+    overflow: hidden;
+    position: relative;
+} */
+
+.zoom-out {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-out:hover {
+    transform: scale(0.8); /* Adjust the scale value to control the zoom-out level */
 }
