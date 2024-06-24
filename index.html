@@ -383,7 +383,7 @@
                     </div>
                 </div>
                 <div class="column right">
-                    <form action="https://formspree.io/f/xayrrzro" method="post">
+                    <form action="https://formspree.io/f/xayrrzro" method="post" onsubmit="submitForm(event)">
                         <div class="section2">
                             <input type="text" class="all first" name="first" placeholder="First Name" autocomplete="off" required>
                             <input type="text" class="all last" name="last" placeholder="Last Name" autocomplete="off" required>
@@ -392,12 +392,21 @@
                             <textarea rows="5" cols="60" name="message" class="all text-area" placeholder="Enter text" autocomplete="off" required></textarea>
                             <br>
                             <button type="submit" class="w3-btn submit">Send Message</button>
+                            <button type="reset" class="w3-btn submit"> Cancel</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Custom Modal Overlay -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="modal-message"></div>
+            <button id="modal-okay" class="w3-btn w3-teal ok-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
   <!-- end of new contact section -->
 
   <!-- contact section start -->
@@ -489,7 +498,86 @@
     function showNavbar() {
       document.querySelector('.navbar').style.display = 'block';
     }
-  </script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    // Function to open the modal
+    function openModal(message) {
+        var modal = document.getElementById('myModal');
+        var modalMessage = document.getElementById('modal-message');
+        modalMessage.textContent = message;
+        modal.style.display = 'flex'; // Use 'flex' to center the modal
+
+        // Re-trigger the message animation
+        modalMessage.style.opacity = 0;
+        modalMessage.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            modalMessage.style.animation = 'none';
+            modalMessage.offsetHeight; /* Trigger reflow */
+            modalMessage.style.animation = null;
+        }, 10);
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Function to handle form submission
+    function submitForm(event) {
+        event.preventDefault();
+        var form = event.target;
+
+        // Disable form interaction during submission
+        form.classList.add('loading'); // Add a loading class to disable inputs and buttons
+
+        // Send form data to Formspree
+        var formData = new FormData(form);
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                // Show success message in modal
+                openModal('Thank you. Your message has been sent successfully!');
+                form.reset(); // Clear input fields upon successful submission
+            } else {
+                // Show error message in modal
+                showError('Oops! There was a problem submitting your form.');
+            }
+            form.classList.remove('loading'); // Remove loading class on completion to re-enable inputs and buttons
+        }).catch(error => {
+            // Show error message in modal
+            showError('Oops! There was a problem submitting your form.');
+            form.classList.remove('loading'); // Remove loading class on error to re-enable inputs and buttons
+        });
+    }
+
+    // Function to show error message in modal
+    function showError(message) {
+        openModal(message);
+    }
+
+    // Event listener for the "OK" button inside the modal
+    document.getElementById('modal-okay').addEventListener('click', closeModal);
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+        var modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Event listener for form submission
+    var form = document.querySelector('form'); // Assuming there is only one form
+    form.addEventListener('submit', submitForm);
+});
+
+</script>
              
 </body>
 </html>
