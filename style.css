@@ -893,7 +893,7 @@ footer .footer-icons:hover{
   button[type="submit"] {
     color: white;
     background-color: teal;
-    border: 2px teal solid;
+    /* border: 2px teal solid; */
     border-radius: 25px;
     margin-top: 0px;
     cursor: pointer;
@@ -904,7 +904,7 @@ footer .footer-icons:hover{
   button[type="submit"]:hover {
     /* background-color: transparent; */
     background-color: lightcyan;
-    border: 2px teal solid;
+    border: 1.5px teal solid;
     color: teal;
     transform: scale(1.03);
   }
@@ -912,7 +912,7 @@ footer .footer-icons:hover{
   button[type="reset"] {
     color: white;
     background-color: teal;
-    border: 2px teal solid;
+    /* border: 2px teal solid; */
     border-radius: 25px;
     margin-top: 0px;
     margin-left: 8px;
@@ -924,7 +924,7 @@ footer .footer-icons:hover{
   button[type="reset"]:hover {
     /* background-color: transparent; */
     background-color: lightcyan;
-    border: 2px teal solid;
+    border: 1.5px teal solid;
     color: teal;
     transform: scale(1.03);
   }
@@ -1276,12 +1276,12 @@ h2:hover::after {
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    animation: fadeInBackground 0.5s; /* Add fade-in animation to modal background */
 }
   .modal-content {
     border-radius: 10px;
     background-color: #fefefe;
     padding: 20px;
-    border: 1px solid #888;
     width: 90%; /* Adjust width for responsiveness */
     max-width: 500px; /* Set a max-width for larger screens */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1293,7 +1293,7 @@ h2:hover::after {
 
   #modal-message {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #modal-okay {
@@ -1308,20 +1308,34 @@ h2:hover::after {
     transition: transform 0.3s ease-in-out;
   }
   .modal .modal-content button:hover{
-    transform: scale(1.15);
+    transform: scale(1.10);
   }
 
 /* Animation for modal opening */
-@keyframes fadeIn {
+@keyframes fadeInBackground {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
 /* Response message animation */
 #modal-message {
     opacity: 0;
     transform: translateY(18px);
     animation: messageAnimation 0.5s forwards; /* Apply message animation */
 }
+
+/* Animation for modal content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9); /* Slightly scale down the modal */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Scale to original size */
+    }
+}
+/* Animation for modal-message */
 @keyframes messageAnimation {
     from {
         opacity: 0;

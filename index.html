@@ -392,7 +392,7 @@
                             <textarea rows="5" cols="60" name="message" class="all text-area" placeholder="Enter text" autocomplete="off" required></textarea>
                             <br>
                             <button type="submit" class="w3-btn submit">Send Message</button>
-                            <button type="reset" class="w3-btn submit"> Cancel</button>
+                            <button type="reset" class="w3-btn submit">Clear</button>
                         </div>
                     </form>
                 </div>
@@ -546,7 +546,7 @@
                 form.reset(); // Clear input fields upon successful submission
             } else {
                 // Show error message in modal
-                showError('Oops! There was a problem submitting your form.');
+                showError('Oops! There was a problem in Submitting. (Please enter the proper details)');
             }
             form.classList.remove('loading'); // Remove loading class on completion to re-enable inputs and buttons
         }).catch(error => {
