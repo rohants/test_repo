@@ -651,6 +651,7 @@ footer .footer-icons:hover{
 }
 .close-arrow {
     transition: transform 0.3s ease-in-out; /* Smooth transition */
+    display: block;
   }
 .close-arrow:hover{
     transform: none;
@@ -1188,6 +1189,9 @@ h2:hover::after {
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
+    }
+    .close-bttn .close-arrow{
+        display: none;
     }
 }
 
