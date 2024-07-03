@@ -643,36 +643,6 @@ footer .footer-icons:hover{
     transform: scale(1.1);
 }
 
-/* close arrow button in pop up */
-.pop-up-win .w3-padding-10 .w3-display-topright{
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.close-arrow {
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-    display: block;
-  }
-.close-arrow:hover{
-    transform: none;
-    color: teal;
-}
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    /* fix for close button height in pop-up in mobile view */
-    .pop-up-win .w3-padding-10 .w3-display-topright{
-        font-size: 15px;
-        height: 42.75px;
-    }
-  }
-@media (max-width: 4000px){
-    /* fix for close button height in pop-up in extreme width view */
-    .pop-up-win .w3-padding-10 .w3-display-topright{
-        /* font-size: 15px; */
-        height: 42.75px;
-    }
-}
-
 /* new versiom skills skills section */
 .skills {
     text-align: center;
@@ -1161,8 +1131,45 @@ h2:hover::after {
     }
 }
 
+/* close arrow button in pop up */
+.pop-up-win .w3-padding-10 .w3-display-topright{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.close-arrow {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    display: block;
+  }
+.close-arrow:hover{
+    transform: none;
+    color: teal;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* fix for close button height in pop-up in mobile view */
+    .pop-up-win .w3-padding-10 .w3-display-topright{
+        font-size: 15px;
+        height: 42.75px;
+    }
+  }
+@media (max-width: 4000px){
+    /* fix for close button height in pop-up in extreme width view */
+    .pop-up-win .w3-padding-10 .w3-display-topright{
+        /* font-size: 15px; */
+        height: 42.75px;
+    }
+}
+
+/* Close button for the mobile view */
 .pop-up-win .w3-container .close-button-mob .mob-btn{
     display: none;
+}
+.open2 .w3-modal-content .w3-center span,
+.open3 .w3-modal-content .w3-center span,
+.open4 .w3-modal-content .w3-center span,
+.open5 .w3-modal-content .w3-center span{
+    display: block;
 }
 
 /* Remove underline hover animation for mobile view */
@@ -1189,8 +1196,19 @@ h2:hover::after {
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
+        transition: transform 0.2s ease-in-out;
+    }
+    .pop-up-win .w3-container .close-button-mob .mob-btn:hover{
+        transform: scale(1.02);
+        font-size: 13px;
     }
     .close-bttn .close-arrow{
+        display: none;
+    }
+    .open2 .pop-up-win .w3-center .close-bttn,
+    .open3 .pop-up-win .w3-center .close-bttn,
+    .open4 .pop-up-win .w3-center .close-bttn,
+    .open5 .pop-up-win .w3-center .close-bttn{
         display: none;
     }
 }
